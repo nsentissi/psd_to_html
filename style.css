@@ -2,20 +2,110 @@
    margin:0;  
 }
 
-.mynav {
-    
+
+
+.ourStory {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 14rem;
+   width: 70%;
+   font-family: Roboto;
+   padding-bottom: 3rem;
+   padding-top: 3rem;
+   
+   
 }
 
-.homepage 
+.storyLeft {
+   margin-left: 10rem;
+   margin-right: 4rem;
+}
 
-.ourStory
 
-.video
+.storyRight h2 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  
+}
 
-.expertise
 
-.team
+.storyRight button {
+   margin-top: 2rem;
+   padding: 10px;
+   background-color: white;
+   border-color:greenyellow;
+   color: green;
+}
 
-.form
+.storyRight p {
+   font-weight: 100;
+}
 
-.myfooter
+.video {
+   background-image: url(./resources/images/bgk-middle.png);
+   text-align: center;
+   background-size: cover;
+   padding: 10rem;
+   font-family: Roboto;
+   
+}
+
+.video img {
+   margin-bottom: 2rem;
+}
+
+.video h3 {
+   color: white;
+}
+
+.form {
+   display: flex;
+   padding: 5rem;
+   justify-content: space-between;
+   
+}
+
+.form input, textarea, button {
+   margin-bottom: 1rem;
+}
+
+form button {
+   background-color: white;
+   border-color:greenyellow;
+   color: green;
+   ;
+}
+
+
+.formLeft {
+   margin-right: 20rem;
+   margin-left: 10rem;
+}
+
+.formLeft h2 {
+   margin-bottom: 3rem;
+}
+
+.formRight h2 {
+   margin-bottom: 3rem;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.shopping {
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-gap: 3px;
+   width: 80%;
+}
+
+.shopping img {
+   display: flex;
+   width: 50%;
+   margin: 1rem;
+}
