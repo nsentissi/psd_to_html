@@ -1,9 +1,9 @@
 * {
-   margin:0;  
+   margin:0;
+   display: flexbox; 
 }
 
-.mynav {
-    
+.mynav {  
 }
 
 .homepage 
@@ -12,7 +12,21 @@
 
 .video
 
-.expertise
+.expertise{
+   padding
+   background-color: black;
+   width: 100%;
+   display: flex;
+   text-align: center;
+}
+
+.expertise-header{
+   text-align: center;
+   display: flex;
+}
+
+.main-body
+
 
 .team
 
