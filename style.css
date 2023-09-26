@@ -1,12 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   
 }
 
 .header1 {
-    position: relative;
-    height: 100%;
+   position: relative;
+   height: 100%;
     width: 100%;
     background-image: url(./resources/images/bgk-header.png);
     background-repeat: no-repeat;
@@ -18,20 +18,24 @@
     
     .ourStory {
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
        align-items: center;
-       margin-left: 14rem;
-       width: 70%;
        font-family: 'Roboto';
        padding-bottom: 3rem;
        padding-top: 3rem;
+       gap: 4rem
        
        
     }
     
-    .storyLeft {
-       margin-left: 5rem;
-       margin-right: 9rem;
+/*      .storyLeft {
+       margin-left: 6rem;
+       margin-right: 6rem;
+    }  */
+
+    .storyLeft svg {
+      height: 14rem;
+      aspect-ratio: 1/1;
     }
     
     .mynav {
@@ -65,8 +69,8 @@
     .mynav .nav-right {
        position: relative;
        margin-right: 20%;
-    }
-    
+      }
+      
     
     .nav-right ul {
        position: relative;
@@ -88,10 +92,14 @@
        text-decoration: none;
        color: white;
     }
+
+    .nav-right a:hover {
+      color: rgb(89, 203, 203)
+    }
     
     #hometext {
        position: relative;
-       color: aqua;
+       
     }
     
     .header2 {
@@ -134,13 +142,19 @@
     font-weight: 600;
     padding: 0.75rem 1.2rem;
     border-radius: 2px;
+    cursor: pointer;
     }
-    
-    footer {
-       position: relative;
+
+.buttonheader2:hover{
+      color: rgb(224, 224, 137);
+      border-color: rgb(224, 224, 137);
+}
+
+footer {
+   position: relative;
        left: 0;
        width: 100%;
-       height: 10%;
+       height: 100%;
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
@@ -171,14 +185,14 @@
        font-weight: li;
     }
     
-    .footer-grid-item .text12343 {
-       position: relative;
-       color: rgb(89, 203, 203);
-       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       font-weight: lighter;
-       font-size: 1.8rem;
-       letter-spacing: 0.1rem;
-       margin-left: -0.55rem;
+.footer-grid-item .text12343 {
+   position: relative;
+   color: rgb(89, 203, 203);
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: lighter;
+   font-size: 1.8rem;
+   letter-spacing: 0.1rem;
+   margin-left: -0.55rem;
     }
     
     .footerbutton1 {
@@ -188,7 +202,7 @@
     font-size: 1rem;
     opacity: 50%;
     font-weight: 200;
-    padding: 1.6rem 1.6rem;
+    padding: 1rem 1rem;
     line-height: 0.05rem;
     }
     .footerbutton2 {
@@ -199,8 +213,7 @@
     border: 1px solid white;
     opacity: 50%;
     color: white;
-    padding: 1.6rem 1.6rem;
-    margin-left: 0.4rem;
+    padding: 1rem 1rem;
     }
     
     
@@ -229,12 +242,11 @@
        grid-template-columns: 10% 1fr;
     }
     .fg6 {
-       display: flex;
-       justify-content: space-between;
-       align-self:center;
-       justify-self: start;
-    
-    }
+       display: grid;
+       justify-content: center;
+       
+      }
+
     .fg7 {
     
     }
@@ -261,7 +273,9 @@
        align-self: self-end;
     }
     
-    
+    .storyRight {
+      width: 50%;
+    }
     
     .storyRight h2 {
       margin-bottom: 1rem;
@@ -276,6 +290,12 @@
        padding: 0.5rem;
        border: 1px solid #27a6b4;
        color: #27a6b4;
+       cursor: pointer;
+    }
+
+    .storyRight button:hover {
+      color: black;
+      background-color: rgb(224, 224, 137);
     }
     
     .storyRight p {
@@ -385,8 +405,23 @@ section{
 
 
 .expertise-header {
-    text-align: center;
-    padding-bottom: 4px;    
+   justify-content: center;
+   text-align: center;
+   padding-bottom: 4px;  
+   font-family: sans-serif;
+   font-weight: lighter;
+   margin-bottom: 1rem;
+}
+
+.expertise-header h2{
+   margin-bottom: 0.5rem;
+}
+
+.expertise-header p {
+   margin-bottom: 0.5rem;
+}
+.expertise-header .small-line {
+   width: 6%;
 }
 
 .expertise-content .skills {
@@ -411,7 +446,6 @@ section{
     border-right: 1px solid rgb(40, 39, 39);
 }
 .expertise-content .b-right {
-    border-bottom: 1px solid rgb(40, 39, 39);
     border-right: 1px solid rgb(40, 39, 39);
 }
 .expertise-content .b-bottom {
@@ -424,17 +458,46 @@ section{
     text-align: center;
 }
 
-
-.team {
-    background-image: url(./resources/images/bgk-header.png);
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.team-header h4 {
+   margin-bottom: 0.5rem;
 }
 
+.team {
+   background-image: url(./resources/images/bgk-header.png);
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #ffffff;
+   font-family: sans-serif;
+}
+
+.name-wrapper{
+   padding-top: 0.75rem;
+}
+
+.team-footer button {
+   background: none;
+   border: 1px solid aqua;
+   color: aqua;
+   font-size: 0.75rem;
+   font-weight: 600;
+   padding: 0.75rem 1.2rem;
+   border-radius: 2px;
+   cursor: pointer;
+   margin-top: 1rem;
+   }
+
+.buttonheader2:hover{
+   color: rgb(224, 224, 137);
+   border-color: rgb(224, 224, 137);
+}
+
+.team-footer{
+   margin-top: 2rem;
+}
 .team-wrapper {
     display: flex;
     gap: 2rem;
@@ -450,6 +513,22 @@ section{
     width: 100%;
     height: 100%;
     background-color: white;
+}
+#bishal{
+   width:100% ;
+   height: 100%;
+}
+
+#small-line {
+   margin-left: 48%;
+   margin-top: 1%;
+   width: 4%;
+
+}
+
+#nawfal {
+   width: 100%;
+   height: 100%;
 }
 
     
