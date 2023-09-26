@@ -15,6 +15,25 @@ padding-bottom: 6.275%;
 
 }
 
+
+.ourStory {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 14rem;
+   width: 70%;
+   font-family: 'Roboto';
+   padding-bottom: 3rem;
+   padding-top: 3rem;
+   
+   
+}
+
+.storyLeft {
+   margin-left: 5rem;
+   margin-right: 9rem;
+}
+
 .mynav {
    position: relative;
    display: flex;
@@ -244,13 +263,111 @@ margin-left: 0.4rem;
 
 
 
+.storyRight h2 {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  
+}
 
-.ourStory
 
-.video
+.storyRight button {
+   margin-top: 2rem;
+   background-color: rgba(0, 0, 0, 0);
+   padding: 0.5rem;
+   border: 1px solid #27a6b4;
+   color: #27a6b4;
+}
 
-.expertise
+.storyRight p {
+   font-weight: 100;
+   font-family: sans-serif;
+   font-size: smaller;
+}
 
-.team
+.video {
+   background-image: url(./resources/images/bgk-middle.png);
+   text-align: center;
+   background-size: cover;
+   padding: 10rem;
+   font-family: Roboto;
+   
+}
 
-.form
+.video img {
+   margin-bottom: 2rem;
+}
+
+.video h3 {
+   color: white;
+}
+
+.form {
+   display: flex;
+   padding: 2rem;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.form input, textarea, button {
+   margin-bottom: 1rem;
+}
+
+form button {
+   background-color: rgba(0, 0, 0, 0);
+   padding: 0.5rem 1rem;
+   border: 1px solid #27a6b4;
+   color: #27a6b4;
+   width: auto;
+   
+}
+
+
+.formLeft {
+   margin-right: 15rem;
+   
+}
+
+.formLeft h2 {
+margin-bottom: 1.5rem;
+}
+
+.formRight {
+   margin-right: 5rem;
+   margin-top: 4.8rem;
+}
+
+.formRight h2 {
+   margin-bottom: 1rem;
+   margin-left: 0.5rem;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   
+}
+
+form input, textarea {
+   padding: 0.5rem;
+   border-color: #27a6b4;
+ 
+ 
+}
+
+.shopping {
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   width: 80%;
+}
+
+.shopping img {
+   display: flex;
+   width: 7.5rem;
+   margin: 1.5rem;
+   
+}
+
+
+
+

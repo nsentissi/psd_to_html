@@ -4,167 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header class="header1">
-    <nav class="mynav">
-                <div class="nav-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50" viewBox="0 0 44 50">
-                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
-                      </svg>
-                      <b class="text443434">tajam</b>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li><a id="hometext" href="#homepage-id">HOME</a></li>
-                        <li><a href="#ourstory-id">ABOUT</a></li>
-                        <li><a href="#expertise-id">EXPERTISE</a></li>
-                        <li><a href="#team-id">TEAMS</a></li>
-                        <li><a href="#works123">WORKS</a></li>
-                        <li><a href="#???">PEOPLE SAY</a></li>
-                        <li><a href="#form123">CONTACT</a></li>
-                    </ul>
-                </div>
-    </nav>
-    <div class="header2">
-        <h1 class="colorheadertext">We Are Awesome Creative Agency</h1>
-        <br />
-        <hr class="linie333">
-        <br />
-        <p id="header2text2" class="colorheadertext"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda tempora autem recusandae eveniet reiciendis consectetur esse voluptas? Necessitatibus aliquid itaque nihil molestias? Soluta rem accusantium numquam unde repudiandae. Dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas! Tempore fuga nam non quaerat assumenda cum, temporibus, quam veniam dolorem aliquam accusantium consequatur reiciendis error a eligendi autem necessitatibus.</p>
-        <br />
-        <br />
-        <button class="buttonheader2">LEARN MORE</button>
-    </div>
-</header>
-
-<footer class="myfooter">
-
-<div class="footer-grid-container">
-<div class="fg1 footer-grid-item">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50" viewBox="0 0 44 50">
-        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
-      </svg>
-      <b class="text12343">tajam</b>
-</div>
-<div class="fg2 footer-grid-item">
-    <h3>OUR STUDIO</h3>
-</div>
-<div class="fg3 footer-grid-item">
-    <h3>STAY IN TOUCH</h3>
-</div>
-<div class="fg4 footer-grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt dolor, soluta sapiente qui cupiditate corrupti veritatis quos mollitia et officia ullam deserunt earum consectetur dignissimos excepturi dolores sunt aliquam?</div>
-<div class="fg5 footer-grid-item">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="19" viewBox="0 0 14 19">
-    <image id="big104" width="14" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAMAAACX3symAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAABHcn4jAAAATnRSTlMAFZ7v8KIYVZCO7luKhloNhRGj/Gfr7Gv5rIxulZN2g0OEfgI9RQFYUwQ+8qg8sJn2gbK2iANlJideBZZ8em0JBnLNyCEicyAdd6ut0tajgZYEAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAALFJREFUGNNNjek2gmEYRbdKn0yJypQhIiIZQ8bM477/y/HWW1bnx5nWes4DMJZKa2Y8Sx+JmYkkyU06FdN0rGechbw5BpizwPxCMMVSeTHI0jKuwKqVNddhQ9wEq7DlNrUQd9i1Dnvu05CDFBzaaHoErWNODBunehbEcy5sB3N5FejaDtw4/Gurz7cx3cX+3oeePNqNdempx8/lwc2LRWj7Otx48/3DT/7xpd+M4Oc36h92Gxje+sWViAAAAABJRU5ErkJggg=="/>
-  </svg> <b>Ruko cucruk, JI. Radio luar dalem jos No.12-13, Kalideres - Jakarta Barat 114880 - Indonesia</b>
-</div>
-<div class="fg6 footer-grid-item">
-    <button class="footerbutton1">Subsribe our newsletter</button>
-    <button class="footerbutton2"></button>
-</div>
-<div class="fg7 footer-grid-item">
-</div>
-<div class="fg8 footer-grid-item">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-        <image id="phone351" width="17" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAAAGLvOSAAAAQnRSTlMA1i6m6p81XQ6oK0gQVhKR5oAVVWXJxkkdZAM4WhQ+QHR7JmJga6n+m4JEuKFNFxGn1+gGfMUZ1EIlvE+5CCDu2VApLTljAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAI1JREFUGNNVzccOwlAMRFHTIfRO6J3QQgu93///KLJ4IOPFSHMk2yJ6AgT/uoTCEaIaYsQlgQKLpEhKS5qMSDant/IUhKKWElKuaKhSs6kraNBs0VbQoSv0TOkPRIaMhLEBe4IzZSbMDSxYurCyWBvYbF0/dx7e9yJ7Pw5HTr8fZy5Xh9tdvX08eb1V/wCaSBENn8iBdgAAAABJRU5ErkJggg=="/>
-      </svg>
-    <b>(+62) 21-2224 3333</b>
-</div>
-<div class="fg9 footer-grid-item">
-    <svg id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 1px;
-            }
-          </style>
-        </defs>
-        <circle class="cls-1" cx="18" cy="18" r="17.5"/>
-        <image id="facebook25" x="14.5" y="10.5" width="7" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAPCAMAAAAf3yWMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADvEKCAAAAAKHRSTlMAQLri58sZ7fpV7KOCX5YfdaAmI9Tz98/4zXGwylRWkWWfZJ5oou+TmN+XDQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABUSURBVAjXbcrLAoFQAADRQRQVigglj2L+/wvr7pvN2QywWK6iNWxiNYGt7tIMct0Dh6MW5YlzpZfoSm3oxv2hTdbCU7vp46Xv4Ee/c/Y6BPNf9YcR5A4IeR2CxnsAAAAASUVORK5CYII="/>
-      </svg>
-      <svg id="dribbble" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 1px;
-            }
-          </style>
-        </defs>
-        <circle class="cls-1" cx="18" cy="18" r="17.5"/>
-        <image id="dribbble4" x="10.5" y="10.5" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABKVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAACxXUwMAAAAYXRSTlMARJHc3bNbLueJmcvuNUiSb/wIVhh+5Asg2dETYHJan+U0t8JXBT2AcLHY9d/OqZzv7OaqjH92Tb++yof07deb62XTq+ijMllrReKvHxA2avY8LVGKApRhN8GOjcD5Sbzb7n9NswAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADVSURBVBjTPY97WwFhEMVPNnLLvYiSCEUXct1qXSKtTaF7pJzv/yV6392H+WPOb2aeM88MIGPDpmzaHVjFlpN0uT30blu1j/5AUGjIxbCsI9wBdp2ComRMyF5cpAT3ccDkYQo4oulLMxM8RpY55HniPy0Uz3gu+8oFLkvlq3jFgWoqXKs3miquVdNyc0utpWjFNtwdeRjZvesJ6N9jwAQe2AZ0uZ1DwHgcURf8xGfYSwJi5NhcMwlM+SLhlW/vUj/IT+uZL43fs/nPwvhd/9v9WyqqNf4H4kQhgKHhGdIAAAAASUVORK5CYII="/>
-      </svg>
-      
-      <svg id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 1px;
-            }
-          </style>
-        </defs>
-        <circle class="cls-1" cx="18" cy="18" r="17.5"/>
-        <image id="twitter16" x="11.5" y="12.5" width="14" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAk1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADRhQNMAAAAL3RSTlMABA0FmNuiKTwP6lXE7yYBihygEHj6s5r+HwjD/BrncofpTPsUbKTMKgtgvNOfVpE96pwAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAbUlEQVQI1zXMaxtCQBCG4ZdCkkMlh7AsSlTm//87Ztnn09zXzC4ME9zhaNnOyYV59pgXWvMDhETRFWDR7Q4jJnokacbMgWdRkq5aX0WZllCfFpq1YrNLYqsVrC7guX+9B9bwUatx+gr5+8/b4QKp4g+JmryojAAAAABJRU5ErkJggg=="/>
-      </svg>
-      <svg id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 1px;
-            }
-          </style>
-        </defs>
-        <circle class="cls-1" cx="18" cy="18" r="17.5"/>
-        <image id="instagram3" x="10.5" y="10.5" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADyJ1eYAAAASHRSTlMACJjJzMve6+WdDJb1oDvgugTbuc2nx4VKWMi1f22zxmn03Mps+tT5qozY0P374c4C84CBcJnou+IF04aN193f8O7a+KaorRKVmDQDAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAJ1JREFUCNc9y9UWgmAQhdGjYICN3QmoIHYXmOf9n0j415LvYmb2xSASleSYKJ5IKipSDEuTGUghswBzyIcu+NZQFHepXGG1VmcDzYAtAO3g6KDLXn+AoCFHugTDBMfCEyIxhWVj5gjPuVgasIgV1z433ILCkLnbH6gdA59845ymefE3r7hRPKti8g6Fuut6zsPxXPfJF9S3af8zP98fqTwhhXenkJMAAAAASUVORK5CYII="/>
-      </svg>
-      <svg id="gplus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 1px;
-            }
-          </style>
-        </defs>
-        <circle class="cls-1" cx="18" cy="18" r="17.5"/>
-        <image id="google" x="10.5" y="11.5" width="15" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAMAAADHVLbdAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADyJ1eYAAAASHRSTlMAIKKJ2P26fQ+1pRT2cirgy7ipd0iI3Pf1nugjgF2Z5220NhZO1cApMLyOgy6yrsnCC7AsUTK9lGtVyJHExxvNJwQ16s89BUH3fbPRAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAJNJREFUCNdNyuUSglAUBOAVu8BELAzswkLFbvf9n0iu13HcH2f3mzkAfIo/EAyFI4jG4CWeSEKl5q1UWjhD72SZy+sFQy8CJeEyK1Wzppl1oMEmYLEFtDviv0v2oPS9NRgKYzSe2FP8Z8b5PxdLUvnJWa037pbmlyp3ova0pA/81JGq9IlnUa5xkb7e7o8nHPsl+QZ2ERBmYjTNHgAAAABJRU5ErkJggg=="/>
-      </svg>
-      <svg id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #fff;
-              stroke-width: 1px;
-            }
-          </style>
-        </defs>
-        <circle class="cls-1" cx="18" cy="18" r="17.5"/>
-        <image id="youtube-2" data-name="youtube" x="9.5" y="12.5" width="17" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAMAAACu/pY1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAADHcBeAAAAPnRSTlMAAUm60Nri6Orp5rxSAi73Om/6gYv+fY32KFTJkplDGH74m0L5nB+E/Z2UNghp3JiCOTSxjNdfEe3u+/S4FOcsm3AAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAiElEQVQI12NgZGJmYWVj5+Bk52JjZeHm4WXg47dDAQIMgiBKSFhEFCoixiAOoiQkGaSkISIyDLIgil+OgUFeQRHEVGJQAosoMwCBpAqQqQoVAaphUFPXADI1GbTA5mgz6Ojqgc3RZzAAixgaGUPtMmGQAtOmbDD3mDGYG0tYWFhaqViAgbWNLQAiTiA1/TuCxQAAAABJRU5ErkJggg=="/>
-      </svg>
-            
-</div>
-<div class="fg10 footer-grid-item">
-    HELP TERMS&CONDITION PRIVACY
-</div>
-<div class="fg11 footer-grid-item">
+        <nav class="mynav">
+                    <div class="nav-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50" viewBox="0 0 44 50">
+                            <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
+                          </svg>
+                          <b class="text443434">tajam</b>
+                    </div>
+                    <div class="nav-right">
+                        <ul>
+                            <li><a id="hometext" href="#homepage-id">HOME</a></li>
+                            <li><a href="#ourstory-id">ABOUT</a></li>
+                            <li><a href="#expertise-id">EXPERTISE</a></li>
+                            <li><a href="#team-id">TEAMS</a></li>
+                            <li><a href="#works123">WORKS</a></li>
+                            <li><a href="#???">PEOPLE SAY</a></li>
+                            <li><a href="#form123">CONTACT</a></li>
+                        </ul>
+                    </div>
+        </nav>
+        <div class="header2">
+            <h1 class="colorheadertext">We Are Awesome Creative Agency</h1>
+            <br />
+            <hr class="linie333">
+            <br />
+            <p id="header2text2" class="colorheadertext"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda tempora autem recusandae eveniet reiciendis consectetur esse voluptas? Necessitatibus aliquid itaque nihil molestias? Soluta rem accusantium numquam unde repudiandae. Dolores? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quas! Tempore fuga nam non quaerat assumenda cum, temporibus, quam veniam dolorem aliquam accusantium consequatur reiciendis error a eligendi autem necessitatibus.</p>
+            <br />
+            <br />
+            <button class="buttonheader2">LEARN MORE</button>
         </div>
-<div class="fg12 footer-grid-item">
-    <b>Copyright 2015 - Tajem Creative</b>
-</div>
-</div>
+    </header>
+    <section class="ourStory">
+        <div class="storyLeft">
+            <img src="./resources/png/logo-big.png" alt="logo-big">
+        </div>
+        <div class="storyRight">
+            <h2>OUR STORY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum dolore laboriosam unde obcaecati nisi officia libero fugiat quas. Excepturi consectetur aspernatur illum reiciendis inventore qui, ea minus. Officiis quis fugit sunt excepturi, culpa perferendis beatae officia possimus voluptate incidunt aliquam quia reiciendis. </p>
+             </br> 
+             <p>Sed reprehenderit perferendis, beatae laudantium voluptatum deserunt nesciunt inventore laboriosam natus pariatur ipsa nostrum, est officia amet eaque, fuga qui recusandae ratione autem distinctio! Recusandae repellendus illo inventore numquam commodi perspiciatis vel alias aspernatur ad.</p>
+            <button>LEARN MORE</button>
+        </div>
+        </section>
+        <section class="video">
+            <img src="./resources/png/play.png" alt="play">
+            <h3>WATCH OUR STORY</h3>
+        </section>
+    
+     <section class="form">
+         <div class="formLeft">
+            <h2>GIVE US GOOD NEWS</h2>
+            <form action="submit">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
+                <button>submit</button>
+            </form>
+         </div>
+         <div class="formRight">
+            <h2>OUR HAPPY CLIENT</h2>
+            <div class="shopping">
+                <img src="./resources/png/Zara_Logo.png" alt="Zara logo">
+                <img src="./resources/png/Logo_of_Mango_(new).png" alt="Mango logo">
+                <img src="./resources/png/1280px-Barneys_New_York_Logo.png" alt="BNY logo">
+                <img src="./resources/png/1280px-Gucci_Logo.png" alt="1280px-Gucci_Logo">
+                <img src="./resources/png/Calvin_klein_logo.png" alt="CK logo">
+                <img src="./resources/png/1280px-Logo_NIKE.png" alt="Nike logo">
+                <img src="./resources/png/Converse_logo.png" alt="Converse logo">
+                <img src="./resources/png/Puma_Logo.png" alt="Puma logo">
+                <img src="./resources/png/1280px-Levi's_logo.png" alt="Levi's logo">
+                <img src="./resources/png/Billabong.png" alt="Billabong logo">
+            </div>
+         </div>   
+        </section>
+        <footer class="myfooter">
 
-</footer>
+            <div class="footer-grid-container">
+            <div class="fg1 footer-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="50" viewBox="0 0 44 50">
+                    <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="44" height="50" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+                  <b class="text12343">tajam</b>
+            </div>
+            <div class="fg2 footer-grid-item">
+                <h3>OUR STUDIO</h3>
+            </div>
+            <div class="fg3 footer-grid-item">
+                <h3>STAY IN TOUCH</h3>
+            </div>
+            <div class="fg4 footer-grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt dolor, soluta sapiente qui cupiditate corrupti veritatis quos mollitia et officia ullam deserunt earum consectetur dignissimos excepturi dolores sunt aliquam?</div>
+            <div class="fg5 footer-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="19" viewBox="0 0 14 19">
+                <image id="big104" width="14" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAMAAACX3symAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAABHcn4jAAAATnRSTlMAFZ7v8KIYVZCO7luKhloNhRGj/Gfr7Gv5rIxulZN2g0OEfgI9RQFYUwQ+8qg8sJn2gbK2iANlJideBZZ8em0JBnLNyCEicyAdd6ut0tajgZYEAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAALFJREFUGNNNjek2gmEYRbdKn0yJypQhIiIZQ8bM477/y/HWW1bnx5nWes4DMJZKa2Y8Sx+JmYkkyU06FdN0rGechbw5BpizwPxCMMVSeTHI0jKuwKqVNddhQ9wEq7DlNrUQd9i1Dnvu05CDFBzaaHoErWNODBunehbEcy5sB3N5FejaDtw4/Gurz7cx3cX+3oeePNqNdempx8/lwc2LRWj7Otx48/3DT/7xpd+M4Oc36h92Gxje+sWViAAAAABJRU5ErkJggg=="/>
+              </svg> <b>Ruko cucruk, JI. Radio luar dalem jos No.12-13, Kalideres - Jakarta Barat 114880 - Indonesia</b>
+            </div>
+            <div class="fg6 footer-grid-item">
+                <button class="footerbutton1">Subsribe our newsletter</button>
+                <button class="footerbutton2"></button>
+            </div>
+            <div class="fg7 footer-grid-item">
+            </div>
+            <div class="fg8 footer-grid-item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                    <image id="phone351" width="17" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAzFBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAAAGLvOSAAAAQnRSTlMA1i6m6p81XQ6oK0gQVhKR5oAVVWXJxkkdZAM4WhQ+QHR7JmJga6n+m4JEuKFNFxGn1+gGfMUZ1EIlvE+5CCDu2VApLTljAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAI1JREFUGNNVzccOwlAMRFHTIfRO6J3QQgu93///KLJ4IOPFSHMk2yJ6AgT/uoTCEaIaYsQlgQKLpEhKS5qMSDant/IUhKKWElKuaKhSs6kraNBs0VbQoSv0TOkPRIaMhLEBe4IzZSbMDSxYurCyWBvYbF0/dx7e9yJ7Pw5HTr8fZy5Xh9tdvX08eb1V/wCaSBENn8iBdgAAAABJRU5ErkJggg=="/>
+                  </svg>
+                <b>(+62) 21-2224 3333</b>
+            </div>
+            <div class="fg9 footer-grid-item">
+                <svg id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 1px;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+                    <image id="facebook25" x="14.5" y="10.5" width="7" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAPCAMAAAAf3yWMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADvEKCAAAAAKHRSTlMAQLri58sZ7fpV7KOCX5YfdaAmI9Tz98/4zXGwylRWkWWfZJ5oou+TmN+XDQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABUSURBVAjXbcrLAoFQAADRQRQVigglj2L+/wvr7pvN2QywWK6iNWxiNYGt7tIMct0Dh6MW5YlzpZfoSm3oxv2hTdbCU7vp46Xv4Ee/c/Y6BPNf9YcR5A4IeR2CxnsAAAAASUVORK5CYII="/>
+                  </svg>
+                  <svg id="dribbble" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 1px;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+                    <image id="dribbble4" x="10.5" y="10.5" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABKVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAACxXUwMAAAAYXRSTlMARJHc3bNbLueJmcvuNUiSb/wIVhh+5Asg2dETYHJan+U0t8JXBT2AcLHY9d/OqZzv7OaqjH92Tb++yof07deb62XTq+ijMllrReKvHxA2avY8LVGKApRhN8GOjcD5Sbzb7n9NswAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADVSURBVBjTPY97WwFhEMVPNnLLvYiSCEUXct1qXSKtTaF7pJzv/yV6392H+WPOb2aeM88MIGPDpmzaHVjFlpN0uT30blu1j/5AUGjIxbCsI9wBdp2ComRMyF5cpAT3ccDkYQo4oulLMxM8RpY55HniPy0Uz3gu+8oFLkvlq3jFgWoqXKs3miquVdNyc0utpWjFNtwdeRjZvesJ6N9jwAQe2AZ0uZ1DwHgcURf8xGfYSwJi5NhcMwlM+SLhlW/vUj/IT+uZL43fs/nPwvhd/9v9WyqqNf4H4kQhgKHhGdIAAAAASUVORK5CYII="/>
+                  </svg>
+                  
+                  <svg id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 1px;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+                    <image id="twitter16" x="11.5" y="12.5" width="14" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAk1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADRhQNMAAAAL3RSTlMABA0FmNuiKTwP6lXE7yYBihygEHj6s5r+HwjD/BrncofpTPsUbKTMKgtgvNOfVpE96pwAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAbUlEQVQI1zXMaxtCQBCG4ZdCkkMlh7AsSlTm//87Ztnn09zXzC4ME9zhaNnOyYV59pgXWvMDhETRFWDR7Q4jJnokacbMgWdRkq5aX0WZllCfFpq1YrNLYqsVrC7guX+9B9bwUatx+gr5+8/b4QKp4g+JmryojAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                  <svg id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 1px;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+                    <image id="instagram3" x="10.5" y="10.5" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADyJ1eYAAAASHRSTlMACJjJzMve6+WdDJb1oDvgugTbuc2nx4VKWMi1f22zxmn03Mps+tT5qozY0P374c4C84CBcJnou+IF04aN193f8O7a+KaorRKVmDQDAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAJ1JREFUCNc9y9UWgmAQhdGjYICN3QmoIHYXmOf9n0j415LvYmb2xSASleSYKJ5IKipSDEuTGUghswBzyIcu+NZQFHepXGG1VmcDzYAtAO3g6KDLXn+AoCFHugTDBMfCEyIxhWVj5gjPuVgasIgV1z433ILCkLnbH6gdA59845ymefE3r7hRPKti8g6Fuut6zsPxXPfJF9S3af8zP98fqTwhhXenkJMAAAAASUVORK5CYII="/>
+                  </svg>
+                  <svg id="gplus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 1px;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+                    <image id="google" x="10.5" y="11.5" width="15" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAMAAADHVLbdAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADyJ1eYAAAASHRSTlMAIKKJ2P26fQ+1pRT2cirgy7ipd0iI3Pf1nugjgF2Z5220NhZO1cApMLyOgy6yrsnCC7AsUTK9lGtVyJHExxvNJwQ16s89BUH3fbPRAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAJNJREFUCNdNyuUSglAUBOAVu8BELAzswkLFbvf9n0iu13HcH2f3mzkAfIo/EAyFI4jG4CWeSEKl5q1UWjhD72SZy+sFQy8CJeEyK1Wzppl1oMEmYLEFtDviv0v2oPS9NRgKYzSe2FP8Z8b5PxdLUvnJWa037pbmlyp3ova0pA/81JGq9IlnUa5xkb7e7o8nHPsl+QZ2ERBmYjTNHgAAAABJRU5ErkJggg=="/>
+                  </svg>
+                  <svg id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: none;
+                          stroke: #fff;
+                          stroke-width: 1px;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="18" cy="18" r="17.5"/>
+                    <image id="youtube-2" data-name="youtube" x="9.5" y="12.5" width="17" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAMAAACu/pY1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAADHcBeAAAAPnRSTlMAAUm60Nri6Orp5rxSAi73Om/6gYv+fY32KFTJkplDGH74m0L5nB+E/Z2UNghp3JiCOTSxjNdfEe3u+/S4FOcsm3AAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAiElEQVQI12NgZGJmYWVj5+Bk52JjZeHm4WXg47dDAQIMgiBKSFhEFCoixiAOoiQkGaSkISIyDLIgil+OgUFeQRHEVGJQAosoMwCBpAqQqQoVAaphUFPXADI1GbTA5mgz6Ojqgc3RZzAAixgaGUPtMmGQAtOmbDD3mDGYG0tYWFhaqViAgbWNLQAiTiA1/TuCxQAAAABJRU5ErkJggg=="/>
+                  </svg>
+                        
+            </div>
+            <div class="fg10 footer-grid-item">
+                HELP TERMS&CONDITION PRIVACY
+            </div>
+            <div class="fg11 footer-grid-item">
+                    </div>
+            <div class="fg12 footer-grid-item">
+                <b>Copyright 2015 - Tajem Creative</b>
+            </div>
+            </div>
+            
+            </footer>
 </body>
 </html>
 
