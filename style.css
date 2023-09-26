@@ -77,10 +77,6 @@ nav a:hover {
    color: #27a6b4;
 }
 
-
-
-
-
 .ourStory {
    display: flex;
    justify-content: space-between;
@@ -99,10 +95,6 @@ nav a:hover {
    margin-right: 9rem;
 }
 
-.storyRight p {
-   font-family: Arial, Helvetica, sans-serif
-}
-
 
 .storyRight h2 {
   margin-bottom: 1rem;
@@ -113,14 +105,16 @@ nav a:hover {
 
 .storyRight button {
    margin-top: 2rem;
-   padding: 10px;
-   background-color: white;
-   border-color:greenyellow;
-   color: green;
+   background-color: rgba(0, 0, 0, 0);
+   padding: 0.5rem;
+   border: 1px solid #27a6b4;
+   color: #27a6b4;
 }
 
 .storyRight p {
    font-weight: 100;
+   font-family: sans-serif;
+   font-size: smaller;
 }
 
 .video {
@@ -152,10 +146,12 @@ nav a:hover {
 }
 
 form button {
-   background-color: white;
-   border-color:greenyellow;
-   color: green;
-   ;
+   background-color: rgba(0, 0, 0, 0);
+   padding: 0.5rem 1rem;
+   border: 1px solid #27a6b4;
+   color: #27a6b4;
+   width: auto;
+   
 }
 
 
@@ -178,6 +174,11 @@ form {
    justify-content: space-between;
 }
 
+form input {
+   padding: 0.5rem;
+   border-color: #27a6b4;
+}
+
 .shopping {
    display: grid;
    grid-template-columns: 1fr 1fr ;
@@ -186,23 +187,10 @@ form {
 
 .shopping img {
    display: flex;
-   width: 50%;
+   width: 60%;
    margin: 1rem;
-}
-
-
-
-.expertise-content{
-   padding: 2rem;
-   width: 80%;
-   grid-template-areas: 1fr 1fr 1fr;
-   gap: 20px;
-   display: grid;
-   gap: 20px;
-}
-
-.skills{
    
-   flex-direction: column;
-   width: 30%;
 }
+
+
+
