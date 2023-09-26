@@ -1,11 +1,373 @@
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.header1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(./resources/images/bgk-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 6.275%;
+    
+    }
+    
+    
+    .ourStory {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-left: 14rem;
+       width: 70%;
+       font-family: 'Roboto';
+       padding-bottom: 3rem;
+       padding-top: 3rem;
+       
+       
+    }
+    
+    .storyLeft {
+       margin-left: 5rem;
+       margin-right: 9rem;
+    }
+    
+    .mynav {
+       position: relative;
+       display: flex;
+       justify-content: space-between;
+       align-items: center; 
+       margin-left: 20%;
+       
+    }
+    
+    
+    .mynav .nav-left {
+       position: relative;
+       display: flex;
+       align-items: center;
+    }
+    
+    .mynav .nav-left .text443434 {
+       position: relative;
+       display: flex;
+       color: rgb(89, 203, 203);
+       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: lighter;
+       font-size: 1.8rem;
+       letter-spacing: 0.1rem;
+       margin-left: 0.75rem;
+    }
+    
+    
+    .mynav .nav-right {
+       position: relative;
+       margin-right: 20%;
+    }
+    
+    
+    .nav-right ul {
+       position: relative;
+       display: flex;
+       list-style: none;
+    }
+       
+    .nav-right li {
+       position: relative;
+       display: flex;
+       margin-inline: 0.8rem;
+       font-size: 0.7rem;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bolder;
+    }
+    
+    .nav-right a {
+       position: relative;
+       text-decoration: none;
+       color: white;
+    }
+    
+    #hometext {
+       position: relative;
+       color: aqua;
+    }
+    
+    .header2 {
+       position: relative;
+       display: grid;
+       height: 50%;
+       width: auto;
+       margin-left: 10%;
+       margin-right: 10%;
+       justify-items: center;
+       place-items: center;
+       padding: 10%;
+       
+    }
+    
+    .linie333 {
+       border: 1px solid aqua;
+       width: 6%;
+       
+    }
+    
+    .colorheadertext {
+       color: #ffffff;
+       text-align: center;
+       
+    }
+    
+    #header2text2 {
+       font-family:Arial, Helvetica, sans-serif;
+       font-size: small;
+       font-weight: normal;
+       line-height: 1.3rem;
+    }
+    
+    .buttonheader2 {
+    background: none;
+    border: 1px solid aqua;
+    color: aqua;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.75rem 1.2rem;
+    border-radius: 2px;
+    }
+    
+    footer {
+       position: relative;
+       left: 0;
+       width: 100%;
+       height: 10%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       padding-bottom: 10%;
+       padding-right: 50%;
+       background-image:  url(resources/images/bgk-footer.png);
+       
+    }
+    
+    .footer-grid-container {
+       grid-template-columns: 1fr 1fr 1fr;
+       display: grid;
+       padding-left: 20%;
+       padding-right: 20%;
+       padding-top: 10%;
+       grid-gap: 10px;
+       grid-auto-rows: minmax(20%, auto);
+       grid-auto-columns: minmax(20%, auto);
+       justify-items: center;
+      
+    }
+    
+    .footer-grid-item {
+       padding: 10px;
+       /* border: 1px solid snow; */
+       color: aliceblue;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: li;
+    }
+    
+    .footer-grid-item .text12343 {
+       position: relative;
+       color: rgb(89, 203, 203);
+       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: lighter;
+       font-size: 1.8rem;
+       letter-spacing: 0.1rem;
+       margin-left: -0.55rem;
+    }
+    
+    .footerbutton1 {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    opacity: 50%;
+    font-weight: 200;
+    padding: 1.6rem 1.6rem;
+    line-height: 0.05rem;
+    }
+    .footerbutton2 {
+    background: white;
+    background-image: url(resources/svg/paper122.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid white;
+    opacity: 50%;
+    color: white;
+    padding: 1.6rem 1.6rem;
+    margin-left: 0.4rem;
+    }
+    
+    
+    .fg1 {
+       justify-items: start;
+       justify-self: start;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       align-items: center;
+       align-self: center;
+    }
+    .fg2 {
+       justify-self: start;
+       align-self: center;
+    
+    }
+    .fg3 {
+       justify-self: start;
+       align-self: center;
+    }
+    .fg4 {
+    
+    }
+    .fg5 {
+       display: grid;
+       grid-template-columns: 10% 1fr;
+    }
+    .fg6 {
+       display: flex;
+       justify-content: space-between;
+       align-self:center;
+       justify-self: start;
+    
+    }
+    .fg7 {
+    
+    }
+    .fg8 {
+       display: grid;
+       grid-template-columns: 20% 90%;
+       justify-self: start; 
+       align-self: center;
+    }
+    .fg9 {
+       justify-self: start;
+       align-self: self-start;
+    }
+    .fg10 {
+       justify-self: start;
+       align-self: self-end;
+       word-spacing: 1rem;
+    }
+    .fg11 {
+       
+    }
+    .fg12 {
+       justify-self: end;
+       align-self: self-end;
+    }
+    
+    
+    
+    .storyRight h2 {
+      margin-bottom: 1rem;
+      font-weight: 900;
+      
+    }
+    
+    
+    .storyRight button {
+       margin-top: 2rem;
+       background-color: rgba(0, 0, 0, 0);
+       padding: 0.5rem;
+       border: 1px solid #27a6b4;
+       color: #27a6b4;
+    }
+    
+    .storyRight p {
+       font-weight: 100;
+       font-family: sans-serif;
+       font-size: smaller;
+    }
+    
+    .video {
+       background-image: url(./resources/images/bgk-middle.png);
+       text-align: center;
+       background-size: cover;
+       padding: 10rem;
+       font-family: Roboto;
+       
+    }
+    
+    .video img {
+       margin-bottom: 2rem;
+    }
+    
+    .video h3 {
+       color: white;
+    }
+    
+    .form {
+       display: flex;
+       padding: 2rem;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    
+    .form input, textarea, button {
+       margin-bottom: 1rem;
+    }
+    
+    form button {
+       background-color: rgba(0, 0, 0, 0);
+       padding: 0.5rem 1rem;
+       border: 1px solid #27a6b4;
+       color: #27a6b4;
+       width: auto;
+       
+    }
+    
+    
+    .formLeft {
+       margin-right: 15rem;
+       
+    }
+    
+    .formLeft h2 {
+    margin-bottom: 1.5rem;
+    }
+    
+    .formRight {
+       margin-right: 5rem;
+       margin-top: 4.8rem;
+    }
+    
+    .formRight h2 {
+       margin-bottom: 1rem;
+       margin-left: 0.5rem;
+    }
+    
+    form {
+       display: flex;
+       flex-direction: column;
+       
+    }
+    
+    form input, textarea {
+       padding: 0.5rem;
+       border-color: #27a6b4;
+     
+     
+    }
+    
+    .shopping {
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+       width: 80%;
+    }
+    
+    .shopping img {
+       display: flex;
+       width: 7.5rem;
+       margin: 1.5rem;
+       
+    }
+    
 
 section{
     padding: 3rem;
@@ -90,3 +452,7 @@ section{
     background-color: white;
 }
 
+    
+    
+    
+    
