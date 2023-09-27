@@ -1,7 +1,10 @@
 * {
    margin: 0;
    padding: 0;
-   
+}
+
+body{
+   justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -37,12 +40,7 @@
          margin-left: 62px;
       }
 
-      #x1x {
-         margin-right:
-      }
-      #x2x {
-         margin-right:
-      }
+   
       
       .team {
          width: 300px;
@@ -94,8 +92,38 @@
          padding-left: 50%;
          width: 325px;
       }
-   
-   }
+      
+      .ourStory{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin-right: 10rem;
+         max-width: 90%;
+         font-size: 1.4rem;
+      }
+      
+      .team-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1.5rem;
+         justify-content: center;
+      }
+
+      .members {
+         margin: 1rem;
+      }
+      
+      .team {
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      .expertise-content {
+        
+         
+      }
+     
+   }  
 
 .header1 {
    position: relative;
@@ -245,7 +273,7 @@
 }
 
 footer {
-   position: relative;
+      position: relative;
        left: 0;
        width: 100%;
        height: 100%;
@@ -307,7 +335,7 @@ footer {
     border: 1px solid white;
     opacity: 50%;
     color: white;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     }
     
     
@@ -337,6 +365,9 @@ footer {
     }
     .fg6 {
        display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 3%;
+       max-height: 20%;
        justify-content: center;
        
       }
@@ -598,7 +629,7 @@ section{
 }
 
 .members {
-    height: 20rem;
+    height: 14rem;
     width: 14rem;
 
 }
