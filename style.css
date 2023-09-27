@@ -4,6 +4,99 @@
    
 }
 
+@media screen and (max-width: 768px) {
+      .mynav {/* Adjust the margin for smaller screens */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-items: center;
+         }
+
+      .mynav .nav-left {
+         margin-bottom: 6%;
+         margin-top: 4%;
+         margin-right: 25%;
+       }
+      
+      .mynav {
+         margin-left: 17.5%
+      }
+
+      .mynav .nav-left {
+         position: relative;
+         display: flex;
+         align-items: center;
+      }
+      
+      .footer-grid-container {
+         margin-left: -16.5%;
+      }
+
+      .fg6 {
+         width: 40px;
+         height: 80px;
+         margin-left: 62px;
+      }
+
+      #x1x {
+         margin-right:
+      }
+      #x2x {
+         margin-right:
+      }
+      
+      .team {
+         width: 300px;
+         
+      }
+      
+      .form {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      flex-direction: column;
+      padding-left: 10%;
+
+      }
+
+      .formLeft {
+         padding-left: 40%;
+      }
+
+      .formRight {
+         padding-left: 10%;
+      }
+
+      #h2h2h2h2h2 {
+         padding-left: 11%;
+      }
+
+      #h2h2h2h2h2h2h2h2h {
+
+         padding-left: 11%;
+      }
+
+      .team-wrapper {
+         width: 500px;
+         padding-left: 46% ;
+         
+      }
+
+      .team {
+         padding-right: 35%;
+      }
+
+      .team-header {
+         padding-left: 50%;
+         height: 30%;
+         width: 300px;
+      }
+
+      .team-footer {
+         padding-left: 50%;
+         width: 325px;
+      }
+   
+   }
+
 .header1 {
    position: relative;
    height: 100%;
@@ -44,6 +137,7 @@
        justify-content: space-between;
        align-items: center; 
        margin-left: 20%;
+       margin-right: 4.5%;
        
     }
     
@@ -159,7 +253,7 @@ footer {
        background-position: center;
        background-size: cover;
        padding-bottom: 10%;
-       padding-right: 50%;
+       padding-right: 0.01%;
        background-image:  url(resources/images/bgk-footer.png);
        
     }
@@ -514,7 +608,7 @@ section{
     height: 100%;
     background-color: white;
 }
-#bishal{
+.bishal{
    width:100% ;
    height: 100%;
 }
@@ -526,12 +620,12 @@ section{
 
 }
 
-#nawfal {
+.nawfal {
    width: 100%;
    height: 100%;
 }
 
-#rines {
+.rines {
    width: 100%;
    height: 100%;
 }
